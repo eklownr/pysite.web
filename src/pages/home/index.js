@@ -2,7 +2,7 @@ const Home = () => {
     // javascrift
     return (
         // html kod
-        <p>hej</p>
+        <p>Home page!</p>
     )
 };
 
