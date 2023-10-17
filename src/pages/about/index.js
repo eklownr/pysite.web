@@ -1,3 +1,4 @@
+import '../../styles/App.css'
 import easy from './easy.png'
 import easyProject from '../../components/images/easy.jpg'
 
