@@ -9,19 +9,24 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 6px 9px;
     text-decoration: none;
     font-size: 17px;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #fba12d;
     color: black;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #3b8b10;
+    color: white;
+  }
+
+  .a:active {
+    background-color: #b4700b;
     color: white;
   }
