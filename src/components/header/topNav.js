@@ -6,7 +6,7 @@ const TopNav = () => {
         // html:
         <div class="topnav">
           <a class="active" href="/home">Home</a>
-          <a href="error">Error pages</a>
+          <a href="tutorial">Tutorial</a>
           <a href="contact">Contact</a>
           <a href="/about">About</a>
         </div>
