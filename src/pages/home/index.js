@@ -16,7 +16,7 @@ const Home = () => {
         // html kod
         <div className='bg-color'>  
             <h1>Home page!</h1>
-            <p>{data ? data.user_name : 'loading... '}</p>
+            <p>Name: {data ? data.user_name : 'loading...'}, Age: {data ? data.Age : 'Loading..'}</p>
         </div>
     )
 };
