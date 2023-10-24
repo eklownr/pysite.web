@@ -14,9 +14,14 @@ const Home = () => {
 
     return (
         // html kod
-        <div className='bg-color'>  
+        <div>  
             <h1>Home page!</h1>
-            <p>Name: {data ? data.user_name : 'loading...'}, Age: {data ? data.Age : 'Loading..'}</p>
+            <div className='block'>
+                <p>Data from backend:</p>
+                Name: {data ? data.user_name : 'loading...'}<br/>
+                Age:  {data ? data.age : 'Loading..'}<br/>
+                Id:   {data ? data.id : 'Loading..'}
+            </div>
         </div>
     )
 };

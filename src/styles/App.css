@@ -8,13 +8,32 @@ body {
   color: #f2f2f2;
 }
 
+.block {
+  padding: 6px 9px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: auto;
+  height: auto;
+  outline: solid 2px chartreuse;
+  background-color: rgb(83, 79, 79);
+  text-align: left;
+}
+
+.block_grey{
+  background-color: #303643;
+  color: #f2f2f2;
+  border-color: #000000;
+  margin-left: 0%;
+}
+
 h2 {
   background-color: #282c34;
   color: #f2f2f2;
 }
 
 p {
-  background-color: #282c34;
   color: #f2f2f2;
 }
 
