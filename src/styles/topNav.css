@@ -1,7 +1,10 @@
-/* Add a black background color to the top navigation */
+/* Top navigation fixed on top when scrolling*/
 .topnav {
     background-color: #333;
     overflow: hidden;
+    position: sticky;
+    top: 0px;
+    width: 100%;
   }
   
   /* Style the links inside the navigation bar */
