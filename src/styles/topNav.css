@@ -5,6 +5,7 @@
     position: sticky;
     top: 0px;
     width: 100%;
+    outline: solid 1px chartreuse;
   }
   
   /* Style the links inside the navigation bar */
