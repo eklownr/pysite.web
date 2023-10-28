@@ -21,20 +21,25 @@ const Home = () => {
 
     return (
         // html kod
-
-// funkar var annan gång efter npm start
-//      {potters.map((person) => (
-//              <li key={person.id}>{person.id}{person.name}</li>
-//      ))}
+// TEST FUNKAR
+//     ID: {potters ? potters[0].id : 'loading...'}<br/>
+//    Name:  {potters ? potters[0].name : 'Loading..'}<br/>
 
         <div>  
             <h1>Home page!</h1>
             <div class="row">
                 <div class="column">
                     <div className="block">
-                        <p>Data from backend:</p>
-                        ID: {potters ? potters[0].id : 'loading...'}<br/>
-                        Name:  {potters ? potters[0].name : 'Loading..'}<br/>
+                        <h3>Data from backend:</h3>
+                        
+                        {potters && potters.map((potter, index) => (
+                        <div key={index}>
+                            <p>ID:   {potter.id}</p>
+                            <p>Name: {potter.name}</p>
+                            <hr/>
+                        </div>
+                        ))}
+
                     </div>
                 </div>
                 <did class="column">
