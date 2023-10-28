@@ -15,7 +15,7 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
   width: auto;
-  height: auto;
+  height: 2800px;
   outline: solid 1px chartreuse;
   background-color: #333;
   text-align: left;
@@ -73,8 +73,8 @@ color: #3b8b10;
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.3%;
-  padding: 15px;
+  width: 49%;
+  padding: 4px;
 }
 
 /* Clear floats after the columns */
@@ -85,8 +85,9 @@ color: #3b8b10;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
+/*@media screen and (max-width:600px) {
   .column {
     width: 100%;
   }
 }
+*/
