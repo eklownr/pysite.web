@@ -16,7 +16,7 @@ const Home = () => {
         fetch("/api/potter", {Method: "GET"})
         .then(response => response.json())
         .then(data => setPotter(data))
-        .catch((error) => console.error(error));
+        .catch((error) => console.log(error));
     }, []);
 
     return (
