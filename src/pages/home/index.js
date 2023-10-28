@@ -1,18 +1,15 @@
 import '../../styles/App.css'
 import React, {useState, useEffect} from 'react';
 
-//const names = ['James', 'Paul', 'John', 'George', 'Ringo'];
+// TEST
+const names = ['James', 'Paul', 'John', 'George', 'Ringo'];
+
+function Anser(props) {
+  return <li>Ny name is: { props.person }</li>;
+}
 
 const Home = () => {
     // javascrift
-//    const [data, setData] = useState(null)
-//
-//    useEffect(() => {
-//        fetch("/api/items", {Method: "GET"})
-//        .then(response => response.json())
-//        .then(data => setData(data))
-//    }, []);
-//
     const [potters, setPotter] = useState(null)
 
     useEffect(() => {
@@ -24,10 +21,12 @@ const Home = () => {
 
     return (
         // html kod
-        // 
+
+// funkar var annan gång efter npm start
 //      {potters.map((person) => (
 //              <li key={person.id}>{person.id}{person.name}</li>
 //      ))}
+
         <div>  
             <h1>Home page!</h1>
             <div class="row">
@@ -42,9 +41,7 @@ const Home = () => {
                     <div className="block">
                         <p>Names from a list using .map</p>
                         <ul>
-                            {potters.map((person) => (
-                                <li key={person.id}>{person.id}{person.name}</li>
-                            ))}
+                        {names.map((name) => <Anser person={name} />)}
                         </ul>
                     </div>
                 </did>
