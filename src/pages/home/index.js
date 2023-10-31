@@ -11,6 +11,7 @@ function Anser(props) {
 const Home = () => {
     // javascrift
     const [potters, setPotter] = useState(null)
+    const [fruitData, setFruitData] = useState(null)
 
     useEffect(() => {
         fetch("/api/potter", {Method: "GET"})
@@ -18,6 +19,24 @@ const Home = () => {
         .then(data => setPotter(data))
         .catch((error) => console.log(error));
     }, []);
+
+    useEffect(() => {
+        fetch("/api/add", {Method: "GET"})
+        .then(response => response.json())
+        .then(fruitData => setFruitData(fruitData))
+        .catch((error) => console.log(error));
+    }, []);
+
+    const updateFruit = () => {
+        fetch("/api/add", {
+            method: "POST",
+            headers: {"Content-type": "application/json"},
+            body: JSON.stringify("hello...!")
+        })
+        .then(response => response.json())
+        .then(fruitData => setFruitData(fruitData))
+        .catch((error) => console.log(error));
+    }
 
     return (
         // html kod
@@ -48,6 +67,8 @@ const Home = () => {
                         <ul>
                         {names.map((name) => <Anser person={name} />)}
                         </ul>
+                        <p>{fruitData ? JSON.stringify(fruitData) : "Loading fruitData"}</p>
+                        <button onClick={(updateFruit)}>add new person</button>
                     </div>
                 </did>
             </div>
